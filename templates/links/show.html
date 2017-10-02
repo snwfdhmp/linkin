@@ -1,0 +1,17 @@
+<h1>Link#Show</h1>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= linksPath() %>" class="btn btn-info">Back to all Links</a></li>
+  <li><a href="<%= editLinkPath({ link_id: link.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= linkPath({ link_id: link.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Name</strong>: <%= link.Name %>
+</p>
+<p>
+  <strong>Url</strong>: <%= link.Url %>
+</p>
+<p>
+  <strong>PublisherID</strong>: <%= link.PublisherID %>
+</p>
